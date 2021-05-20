@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -235,6 +236,8 @@ public class bst extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//will hide the title
+        getSupportActionBar().hide(); //hide the title bar
         setContentView(R.layout.activity_bst);
 
         back = (Button) findViewById(R.id.back);
@@ -258,8 +261,8 @@ public class bst extends AppCompatActivity {
 
         baN.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                insertedNode = (EditText)findViewById(R.id.introducereNod);
-                displayNode = (TextView)findViewById(R.id.afisare);
+                insertedNode = (EditText)findViewById(R.id.addNode);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(TextUtils.isEmpty(insertedNode.getText().toString()))
                     Toast.makeText(bst.this, "A node must be inserted!", Toast.LENGTH_SHORT).show();
                     //displayNode.setText("A node must be inserted!");
@@ -276,8 +279,8 @@ public class bst extends AppCompatActivity {
 
         bdN.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                insertedNode = (EditText)findViewById(R.id.introducereNod);
-                displayNode = (TextView)findViewById(R.id.afisare);
+                insertedNode = (EditText)findViewById(R.id.addNode);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(TextUtils.isEmpty(insertedNode.getText().toString()))
                     Toast.makeText(bst.this, "A node must be inserted!", Toast.LENGTH_SHORT).show();
                     //displayNode.setText("A node must be inserted!");
@@ -299,8 +302,8 @@ public class bst extends AppCompatActivity {
 
         bfsN.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                insertedNode = (EditText)findViewById(R.id.introducereNod);
-                displayNode = (TextView)findViewById(R.id.afisare);
+                insertedNode = (EditText)findViewById(R.id.addNode);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(TextUtils.isEmpty(insertedNode.getText().toString()))
                     Toast.makeText(bst.this, "A node must be inserted!", Toast.LENGTH_SHORT).show();
                     //displayNode.setText("A node must be inserted!");
@@ -322,8 +325,8 @@ public class bst extends AppCompatActivity {
 
         bfpN.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                insertedNode = (EditText) findViewById(R.id.introducereNod);
-                displayNode = (TextView) findViewById(R.id.afisare);
+                insertedNode = (EditText) findViewById(R.id.addNode);
+                displayNode = (TextView) findViewById(R.id.displayText);
                 if (TextUtils.isEmpty(insertedNode.getText().toString()))
                     Toast.makeText(bst.this, "A node must be inserted!", Toast.LENGTH_SHORT).show();
                     //displayNode.setText("A node must be inserted!");
@@ -345,7 +348,7 @@ public class bst extends AppCompatActivity {
 
         bminN.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                displayNode = (TextView)findViewById(R.id.afisare);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(tree.root == null) Toast.makeText(bst.this, "The tree is empty!", Toast.LENGTH_SHORT).show();
                 else displayNode.setText("The minimum node is: " + tree.findSmallestValue(tree.root));
             }
@@ -353,7 +356,7 @@ public class bst extends AppCompatActivity {
 
         bmaxN.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                displayNode = (TextView)findViewById(R.id.afisare);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(tree.root == null) Toast.makeText(bst.this, "The tree is empty!", Toast.LENGTH_SHORT).show();
                 else displayNode.setText("The maximum node is: " + tree.findBiggestValue(tree.root));
             }
@@ -361,7 +364,7 @@ public class bst extends AppCompatActivity {
 
         binord.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                displayNode = (TextView)findViewById(R.id.afisare);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(tree.root == null) Toast.makeText(bst.this, "The tree is empty!", Toast.LENGTH_SHORT).show();
                 else {
                     List<Integer> display = new ArrayList<Integer>();
@@ -374,7 +377,7 @@ public class bst extends AppCompatActivity {
 
         bpred.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                displayNode = (TextView)findViewById(R.id.afisare);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(tree.root == null) Toast.makeText(bst.this, "The tree is empty!", Toast.LENGTH_SHORT).show();
                 else {
                     List<Integer> display = new ArrayList<Integer>();
@@ -387,7 +390,7 @@ public class bst extends AppCompatActivity {
 
         bpostd.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                displayNode = (TextView)findViewById(R.id.afisare);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(tree.root == null) Toast.makeText(bst.this, "The tree is empty!", Toast.LENGTH_SHORT).show();
                 else {
                     List<Integer> display = new ArrayList<Integer>();
@@ -400,7 +403,7 @@ public class bst extends AppCompatActivity {
 
         bh.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                displayNode = (TextView)findViewById(R.id.afisare);
+                displayNode = (TextView)findViewById(R.id.displayText);
                 if(tree.root == null) Toast.makeText(bst.this, "The tree is empty!", Toast.LENGTH_SHORT).show();
                 else displayNode.setText("The height of the tree is: " + tree.maxDepth(tree.root));
             }

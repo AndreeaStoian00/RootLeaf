@@ -10,50 +10,53 @@
 
     <Button
         android:id="@+id/bnt"
-        android:layout_width="158dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="195dp"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="201dp"
         android:backgroundTint="#ffb94a"
         android:text="Binary Tree"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/rbt"
-        android:layout_width="158dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="33dp"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#ffb94a"
         android:text="Red Black Tree"
         app:layout_constraintBottom_toTopOf="@+id/bt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bnt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bnt"
         app:layout_constraintTop_toBottomOf="@+id/bnt"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/bt"
-        android:layout_width="158dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="287dp"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="286dp"
         android:backgroundTint="#ffb94a"
         android:text="B Tree"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rbt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rbt"
+        app:layout_constraintTop_toBottomOf="@+id/rbt"
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="96dp"
+        android:id="@+id/imageView3"
+        android:layout_width="411dp"
+        android:layout_height="237dp"
+        android:layout_marginBottom="256dp"
         app:layout_constraintBottom_toBottomOf="@+id/bt"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

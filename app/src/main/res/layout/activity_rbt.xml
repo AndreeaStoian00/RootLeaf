@@ -7,6 +7,19 @@
     android:background="#222125"
     tools:context=".rbt">
 
+    <TextView
+        android:id="@+id/displayText2"
+        android:layout_width="198dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#ffb94a"
+        app:layout_constraintBottom_toTopOf="@+id/addNode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/back"
         android:layout_width="wrap_content"
@@ -19,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/introducereNod"
+        android:id="@+id/addNode"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginEnd="6dp"
@@ -39,8 +52,8 @@
         android:layout_marginEnd="7dp"
         android:backgroundTint="#ffb94a"
         android:text="Add"
-        app:layout_constraintBottom_toBottomOf="@+id/introducereNod"
-        app:layout_constraintEnd_toStartOf="@+id/introducereNod"
+        app:layout_constraintBottom_toBottomOf="@+id/addNode"
+        app:layout_constraintEnd_toStartOf="@+id/addNode"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -52,7 +65,7 @@
         android:text="Delete"
         app:layout_constraintBottom_toTopOf="@+id/Successor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/introducereNod" />
+        app:layout_constraintStart_toEndOf="@+id/addNode" />
 
     <Button
         android:id="@+id/Successor"
@@ -137,7 +150,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Preorder"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <Button
         android:id="@+id/Display"
@@ -163,7 +176,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Postorder" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/logo"
         android:layout_width="123dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"

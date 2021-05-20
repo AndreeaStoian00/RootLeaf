@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222125"
+    tools:context=".bt_reqt">
+
+    <EditText
+        android:id="@+id/factorT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="177dp"
+        android:backgroundTint="#ffb94a"
+        android:ems="10"
+        android:hint="Insert the T factor"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tobt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="@+id/factorT"
+        app:layout_constraintStart_toStartOf="@+id/factorT"
+        app:layout_constraintTop_toBottomOf="@+id/factorT" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

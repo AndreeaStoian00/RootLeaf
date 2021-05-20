@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222125"
+    tools:context=".bst">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/introducereNod"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="#ffb94a"
+        android:ems="10"
+        android:hint="Enter value of node"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Successor"
+        app:layout_constraintEnd_toStartOf="@+id/Delete"
+        app:layout_constraintStart_toEndOf="@+id/Add" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="7dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Add"
+        app:layout_constraintBaseline_toBaselineOf="@+id/introducereNod"
+        app:layout_constraintEnd_toStartOf="@+id/introducereNod"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Delete"
+        app:layout_constraintBaseline_toBaselineOf="@+id/introducereNod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/introducereNod" />
+
+    <Button
+        android:id="@+id/Successor"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find successor"
+        app:layout_constraintBottom_toTopOf="@+id/Max"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Predecessor" />
+
+    <Button
+        android:id="@+id/Predecessor"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find predecessor"
+        app:layout_constraintEnd_toStartOf="@+id/Successor"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introducereNod" />
+
+    <Button
+        android:id="@+id/Min"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find minimum"
+        app:layout_constraintBottom_toTopOf="@+id/Inorder"
+        app:layout_constraintEnd_toStartOf="@+id/Preorder"
+        app:layout_constraintStart_toStartOf="@+id/Preorder" />
+
+    <Button
+        android:id="@+id/Max"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find maximum"
+        app:layout_constraintBottom_toTopOf="@+id/Postorder"
+        app:layout_constraintEnd_toEndOf="@+id/Postorder" />
+
+    <Button
+        android:id="@+id/Inorder"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Inorder"
+        app:layout_constraintEnd_toStartOf="@+id/Preorder"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Preorder" />
+
+    <Button
+        android:id="@+id/Preorder"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Preorder"
+        app:layout_constraintEnd_toStartOf="@+id/Postorder"
+        app:layout_constraintStart_toEndOf="@+id/Inorder"
+        app:layout_constraintTop_toBottomOf="@+id/Max" />
+
+    <Button
+        android:id="@+id/Postorder"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Postorder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Preorder"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Display"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Display"
+        app:layout_constraintEnd_toStartOf="@+id/Height"
+        app:layout_constraintTop_toBottomOf="@+id/Inorder" />
+
+    <Button
+        android:id="@+id/Height"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="74dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Height"
+        app:layout_constraintEnd_toEndOf="@+id/Postorder"
+        app:layout_constraintStart_toStartOf="@+id/Preorder"
+        app:layout_constraintTop_toBottomOf="@+id/Postorder" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="186dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Height"
+        app:layout_constraintStart_toEndOf="@+id/Add"
+        app:layout_constraintTop_toTopOf="@+id/Max"
+        app:srcCompat="@drawable/app" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/afisare"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="#ffb94a"
+        app:layout_constraintBottom_toTopOf="@+id/introducereNod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

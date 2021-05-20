@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222125"
+    tools:context=".rbt">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/introducereNod"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="#ffb94a"
+        android:ems="10"
+        android:hint="Enter value of node"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Successor"
+        app:layout_constraintEnd_toStartOf="@+id/Delete"
+        app:layout_constraintStart_toEndOf="@+id/Add" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="7dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/introducereNod"
+        app:layout_constraintEnd_toStartOf="@+id/introducereNod"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/Successor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/introducereNod" />
+
+    <Button
+        android:id="@+id/Successor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find successor"
+        app:layout_constraintBottom_toTopOf="@+id/Max"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Predecessor" />
+
+    <Button
+        android:id="@+id/Predecessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find predecessor"
+        app:layout_constraintEnd_toStartOf="@+id/Successor"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Add" />
+
+    <Button
+        android:id="@+id/Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find minimum"
+        app:layout_constraintBottom_toTopOf="@+id/Inorder"
+        app:layout_constraintEnd_toStartOf="@+id/Max"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Find maximum"
+        app:layout_constraintBottom_toTopOf="@+id/Postorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Min" />
+
+    <Button
+        android:id="@+id/Inorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Inorder"
+        app:layout_constraintBottom_toTopOf="@+id/Height"
+        app:layout_constraintEnd_toStartOf="@+id/Preorder"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Preorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Preorder"
+        app:layout_constraintBottom_toTopOf="@+id/Display"
+        app:layout_constraintEnd_toStartOf="@+id/Postorder"
+        app:layout_constraintStart_toEndOf="@+id/Inorder" />
+
+    <Button
+        android:id="@+id/Postorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="341dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Postorder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Preorder"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Display"
+        app:layout_constraintEnd_toStartOf="@+id/Height"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Inorder" />
+
+    <Button
+        android:id="@+id/Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Display"
+        app:layout_constraintTop_toBottomOf="@+id/Postorder" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="123dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="227dp"
+        app:layout_constraintBottom_toTopOf="@+id/Postorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app" />
+
+    <Button
+        android:id="@+id/blackH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#ffb94a"
+        android:text="Black Height"
+        app:layout_constraintEnd_toEndOf="@+id/Height"
+        app:layout_constraintTop_toBottomOf="@+id/Display" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

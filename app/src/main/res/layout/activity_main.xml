@@ -12,13 +12,13 @@
         android:id="@+id/bnt"
         android:layout_width="155dp"
         android:layout_height="60dp"
-        android:layout_marginTop="201dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#ffb94a"
         android:text="Binary Tree"
+        app:layout_constraintBottom_toTopOf="@+id/rbt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -30,9 +30,8 @@
         android:backgroundTint="#ffb94a"
         android:text="Red Black Tree"
         app:layout_constraintBottom_toTopOf="@+id/bt"
-        app:layout_constraintEnd_toEndOf="@+id/bnt"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/bnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bnt"
         tools:ignore="MissingConstraints" />
 
@@ -40,24 +39,51 @@
         android:id="@+id/bt"
         android:layout_width="155dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="286dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#ffb94a"
         android:text="B Tree"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/rbt"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/rbt"
+        app:layout_constraintBottom_toTopOf="@+id/splay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rbt"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="411dp"
-        android:layout_height="237dp"
-        android:layout_marginBottom="256dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bt"
+        android:layout_width="414dp"
+        android:layout_height="159dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/splay"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Splay Tree"
+        app:layout_constraintBottom_toTopOf="@+id/avl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt"
+        android:backgroundTint="#ffb94a"/>
+
+    <Button
+        android:id="@+id/avl"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="174dp"
+        android:text="AVL Tree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splay"
+        android:backgroundTint="#ffb94a"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trees">
-        <activity android:name=".bt_reqt"></activity>
+        <activity android:name=".at"></activity>
+        <activity android:name=".st" />
+        <activity android:name=".bt_reqt" />
         <activity android:name=".bt" />
         <activity android:name=".rbt" />
         <activity android:name=".bst" />

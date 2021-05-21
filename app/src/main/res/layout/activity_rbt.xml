@@ -22,8 +22,8 @@
 
     <Button
         android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#ffb94a"
@@ -35,7 +35,6 @@
         android:id="@+id/addNode"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="6dp"
         android:backgroundTint="#ffb94a"
         android:ems="10"
         android:hint="Enter value of node"
@@ -46,10 +45,11 @@
 
     <Button
         android:id="@+id/Add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="7dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#ffb94a"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="@+id/addNode"
@@ -58,9 +58,11 @@
 
     <Button
         android:id="@+id/Delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="29dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#ffb94a"
         android:text="Delete"
         app:layout_constraintBottom_toTopOf="@+id/Successor"
@@ -69,8 +71,10 @@
 
     <Button
         android:id="@+id/Successor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="53dp"
         android:backgroundTint="#ffb94a"
         android:text="Find successor"
@@ -80,10 +84,11 @@
 
     <Button
         android:id="@+id/Predecessor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="9dp"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#ffb94a"
         android:text="Find predecessor"
         app:layout_constraintEnd_toStartOf="@+id/Successor"
@@ -93,10 +98,10 @@
 
     <Button
         android:id="@+id/Min"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="4dp"
         android:backgroundTint="#ffb94a"
         android:text="Find minimum"
         app:layout_constraintBottom_toTopOf="@+id/Inorder"
@@ -106,10 +111,10 @@
 
     <Button
         android:id="@+id/Max"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#ffb94a"
         android:text="Find maximum"
         app:layout_constraintBottom_toTopOf="@+id/Postorder"
@@ -118,10 +123,9 @@
 
     <Button
         android:id="@+id/Inorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#ffb94a"
         android:text="Inorder"
         app:layout_constraintBottom_toTopOf="@+id/Height"
@@ -131,19 +135,20 @@
 
     <Button
         android:id="@+id/Preorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
         android:backgroundTint="#ffb94a"
         android:text="Preorder"
         app:layout_constraintBottom_toTopOf="@+id/Display"
         app:layout_constraintEnd_toStartOf="@+id/Postorder"
-        app:layout_constraintStart_toEndOf="@+id/Inorder" />
+        app:layout_constraintStart_toEndOf="@+id/Inorder"
+        app:layout_constraintTop_toBottomOf="@+id/Min" />
 
     <Button
         android:id="@+id/Postorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="341dp"
         android:backgroundTint="#ffb94a"
         android:text="Postorder"
@@ -154,8 +159,9 @@
 
     <Button
         android:id="@+id/Display"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#ffb94a"
         android:text="Display"
@@ -166,9 +172,10 @@
 
     <Button
         android:id="@+id/Height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#ffb94a"
         android:text="Height"
         app:layout_constraintEnd_toEndOf="parent"
@@ -189,12 +196,16 @@
 
     <Button
         android:id="@+id/blackH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="21dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="176dp"
         android:backgroundTint="#ffb94a"
         android:text="Black Height"
+        app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintEnd_toEndOf="@+id/Height"
-        app:layout_constraintTop_toBottomOf="@+id/Display" />
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Display"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

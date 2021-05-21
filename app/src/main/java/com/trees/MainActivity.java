@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
     private Button bnt;
     private Button rbt;
     private Button bt;
+    private Button st;
+    private Button at;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         bnt = (Button) findViewById(R.id.bnt);
         rbt = (Button) findViewById(R.id.rbt);
         bt = (Button) findViewById(R.id.bt);
+        st = (Button) findViewById(R.id.splay);
+        at = (Button) findViewById(R.id.avl);
 
         bnt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +49,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) { openActivityBTreq();}
         });
 
+        st.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openActivityST();}
+        });
+
+        at.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openActivityAT();}
+        });
+
     }
 
 
@@ -62,4 +77,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openActivityST(){
+        Intent intent = new Intent(this, st.class);
+        startActivity(intent);
+    }
+
+    public void openActivityAT(){
+        Intent intent = new Intent(this, at.class);
+        startActivity(intent);
+    }
 }

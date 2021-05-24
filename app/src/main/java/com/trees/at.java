@@ -390,7 +390,7 @@ public class at extends AppCompatActivity {
         bmaxN = (Button) findViewById(R.id.Max);
         binord = (Button) findViewById(R.id.Inorder);
         bpred = (Button) findViewById(R.id.Preorder);
-        bpostd = (Button) findViewById(R.id.Postorder);
+        bpostd = (Button) findViewById(R.id.InorderBT);
         bh = (Button) findViewById(R.id.Height);
 
         back.setOnClickListener(new View.OnClickListener() {

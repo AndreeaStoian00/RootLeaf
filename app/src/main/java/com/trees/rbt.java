@@ -3,16 +3,8 @@ package com.trees;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
 import android.text.TextUtils;
-import android.text.style.BackgroundColorSpan;
-import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -473,7 +465,7 @@ public class rbt extends AppCompatActivity {
         bmaxN = (Button) findViewById(R.id.Max);
         binord = (Button) findViewById(R.id.Inorder);
         bpred = (Button) findViewById(R.id.Preorder);
-        bpostd = (Button) findViewById(R.id.Postorder);
+        bpostd = (Button) findViewById(R.id.InorderBT);
         bh = (Button) findViewById(R.id.Height);
         bbh = (Button) findViewById(R.id.blackH);
 

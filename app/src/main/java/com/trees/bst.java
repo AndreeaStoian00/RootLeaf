@@ -17,7 +17,7 @@ import java.util.List;
 
 public class bst extends AppCompatActivity {
 
-    public class BinarySearchTree {
+    public static class BinarySearchTree {
         class Node {
             int key;
             Node left, right;
@@ -111,11 +111,11 @@ public class bst extends AppCompatActivity {
             return display;
         }
 
-        private int findSmallestValue(Node root) {
+        public int findSmallestValue(Node root) {
             return root.left == null ? root.key : findSmallestValue(root.left);
         }
 
-        private int findBiggestValue(Node root){
+        public int findBiggestValue(Node root){
             return root.right == null? root.key : findBiggestValue(root.right);
         }
 
@@ -249,7 +249,7 @@ public class bst extends AppCompatActivity {
         bmaxN = (Button) findViewById(R.id.Max);
         binord = (Button) findViewById(R.id.Inorder);
         bpred = (Button) findViewById(R.id.Preorder);
-        bpostd = (Button) findViewById(R.id.Postorder);
+        bpostd = (Button) findViewById(R.id.InorderBT);
         bh = (Button) findViewById(R.id.Height);
 
         back.setOnClickListener(new View.OnClickListener() {

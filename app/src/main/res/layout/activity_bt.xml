@@ -12,13 +12,14 @@
         android:layout_width="198dp"
         android:layout_height="111dp"
         android:layout_marginStart="44dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="605dp"
         android:textColor="#ffb94a"
-        app:layout_constraintBottom_toTopOf="@+id/addNode"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/back"
@@ -33,163 +34,92 @@
 
     <EditText
         android:id="@+id/addNode"
-        android:layout_width="0dp"
+        android:layout_width="147dp"
         android:layout_height="50dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginBottom="543dp"
         android:backgroundTint="#ffb94a"
         android:ems="10"
         android:hint="Enter value of node"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/Successor"
-        app:layout_constraintEnd_toStartOf="@+id/Delete"
-        app:layout_constraintStart_toEndOf="@+id/Add" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Add"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="551dp"
         android:backgroundTint="#ffb94a"
         android:text="Add"
-        app:layout_constraintBottom_toBottomOf="@+id/addNode"
-        app:layout_constraintEnd_toStartOf="@+id/addNode"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Delete"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="287dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="551dp"
         android:backgroundTint="#ffb94a"
         android:text="Delete"
-        app:layout_constraintBottom_toTopOf="@+id/Successor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/addNode" />
-
-    <Button
-        android:id="@+id/Successor"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="53dp"
-        android:backgroundTint="#ffb94a"
-        android:text="Find successor"
-        app:layout_constraintBottom_toTopOf="@+id/Max"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Predecessor" />
-
-    <Button
-        android:id="@+id/Predecessor"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#ffb94a"
-        android:text="Find predecessor"
-        app:layout_constraintEnd_toStartOf="@+id/Successor"
-        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Add" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Min"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginBottom="390dp"
         android:backgroundTint="#ffb94a"
         android:text="Find minimum"
-        app:layout_constraintBottom_toTopOf="@+id/Inorder"
-        app:layout_constraintEnd_toStartOf="@+id/Max"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Max"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginBottom="390dp"
         android:backgroundTint="#ffb94a"
         android:text="Find maximum"
-        app:layout_constraintBottom_toTopOf="@+id/Postorder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Min" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Inorder"
+        android:id="@+id/InorderBT"
         android:layout_width="125dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginBottom="340dp"
         android:backgroundTint="#ffb94a"
         android:text="Inorder"
-        app:layout_constraintBottom_toTopOf="@+id/Height"
-        app:layout_constraintEnd_toStartOf="@+id/Preorder"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Preorder"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#ffb94a"
-        android:text="Preorder"
-        app:layout_constraintBottom_toTopOf="@+id/Display"
-        app:layout_constraintEnd_toStartOf="@+id/Postorder"
-        app:layout_constraintStart_toEndOf="@+id/Inorder"
-        app:layout_constraintTop_toBottomOf="@+id/Min" />
-
-    <Button
-        android:id="@+id/Postorder"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="341dp"
-        android:backgroundTint="#ffb94a"
-        android:text="Postorder"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Preorder"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-    <Button
-        android:id="@+id/Display"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#ffb94a"
-        android:text="Display"
-        app:layout_constraintEnd_toStartOf="@+id/Height"
-        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Inorder" />
-
-    <Button
-        android:id="@+id/Height"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#ffb94a"
-        android:text="Height"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Display"
-        app:layout_constraintTop_toBottomOf="@+id/Postorder" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="123dp"
-        android:layout_height="0dp"
+        android:layout_height="98dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="227dp"
-        app:layout_constraintBottom_toTopOf="@+id/Postorder"
+        android:layout_marginBottom="617dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/app" />
